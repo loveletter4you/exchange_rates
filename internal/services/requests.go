@@ -14,7 +14,6 @@ func GetExchangeRates(dateString string) ([]byte, error) {
 	}
 	url := fmt.Sprintf("https://www.cbr.ru/scripts/XML_daily.asp?date_req=%s",
 		date.Format("02/01/2006"))
-	fmt.Println(url)
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
 		return nil, err

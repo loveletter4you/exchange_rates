@@ -18,6 +18,6 @@ USD (Доллар США): 61,2475
 
 ```
 go mod download
-go build github.com/loveletter4you/exchange_rates/cmd/app
-./app -code=$your_code -date=$your_date
+go build github.com/loveletter4you/exchange_rates/cmd/currency_rates
+./currency_rates -code=$your_code -date=$your_date
 ```
